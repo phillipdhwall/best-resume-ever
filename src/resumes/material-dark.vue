@@ -64,13 +64,13 @@
       </div>
     </a>
 
-    <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
+    <a v-if="person.contact.linkedin" :href="'https://'+person.contact.website" target="_blank">
       <div class="item">
         <div class="icon">
-          <i class="material-icons">language</i>
+          <i class="fa fa-linkedin"></i>
         </div>
         <div class="text">
-          <span>{{person.contact.website}}</span>
+          <span>{{person.contact.linkedin}}</span>
         </div>
       </div>
     </a>
@@ -96,6 +96,7 @@
     <div class="title">
       <h2>{{person.name.first}} {{person.name.middle}} {{person.name.last}}</h2>
       <div>{{person.position}}</div>
+      <div>ABR Status: {{person.abr}}</div>
     </div>
 
     <div class="section-headline">{{ lang.headings.experience }}</div>
@@ -111,8 +112,11 @@
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
       <div class="headline">{{education.degree}}</div>
+      <div class="subheadline">{{education.institution}}</div>
+      <div class="subheadline">{{education.timeperiod}}</div>
+      <div class="subheadline">{{education.GPA}}</div>
       <p class="info">
-        {{education.timeperiod}}, {{education.description}}
+        {{education.description}}
       </p>
     </div>
   </div>
