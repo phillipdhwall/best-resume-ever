@@ -202,7 +202,8 @@ a {
   margin-left:20px;
   margin-top:40px;
   margin-bottom:20px;
-  color:#3f3d3c;
+  color:#ec0000
+  // color:#3f3d3c;
 }
 .c {
   clear:both;
@@ -347,7 +348,7 @@ h4 {
   overflow:hidden;
   display:block;
   .section-headline {
-    color:rgba(255,255,255,0.54);
+    color:#ec0000;
   }
   a {
     color:rgba(255,255,255,0.59);
